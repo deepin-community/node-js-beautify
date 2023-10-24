@@ -1,0 +1,16 @@
+version=4
+opts=\
+dversionmangle=auto,\
+repacksuffix=+dfsg,\
+filenamemangle=s/.*?(\d[\d\.]*@ARCHIVE_EXT@)/node-js-beautify-$1/ \
+ https://github.com/beautify-web/js-beautify/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,ctype=nodejs,component=editorconfig,pgpmode=none,filenamemangle=s/.*?(\d[\d\.]*@ARCHIVE_EXT@)/node-editorconfig-$1/" \
+ https://registry.npmjs.org/editorconfig https://registry.npmjs.org/editorconfig/-/editorconfig-([\d\.]+)@ARCHIVE_EXT@ checksum
+
+# It is not recommended use npmregistry. Please investigate more.
+# Take a look at https://wiki.debian.org/debian/watch/
+opts="searchmode=plain,component=types-js-beautify,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-js-beautify-$1/" \
+ https://registry.npmjs.org/@types/js-beautify https://registry.npmjs.org/@types/js-beautify/-/js-beautify-([\d\.]+)@ARCHIVE_EXT@ checksum

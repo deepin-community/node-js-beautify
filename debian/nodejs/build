@@ -1,0 +1,5 @@
+./tools/build.sh js
+help2man -n 'beautify, unpack or deobfuscate JavaScript' -N ./js/bin/js-beautify.js >js-beautify-js.1
+help2man -n 'beautify, unpack or deobfuscate CSS' -N ./js/bin/css-beautify.js >css-beautify-js.1
+help2man -n 'beautify, unpack or deobfuscate HTML' -N ./js/bin/html-beautify.js >html-beautify-js.1
+perl -i -pe 's/((?:js|html|css)-beautify)\.js/$1/gi' *.1

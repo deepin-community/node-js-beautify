@@ -1,0 +1,20 @@
+Name: js-beautify
+Link: /usr/bin/js-beautify
+Alternative: /usr/bin/js-beautify-js
+Dependents:
+  /usr/share/man/man1/js-beautify.1.gz js-beautify.1.gz /usr/share/man/man1/js-beautify-js.1.gz
+Priority: 10
+
+Name: css-beautify
+Link: /usr/bin/css-beautify
+Alternative: /usr/bin/css-beautify-js
+Dependents:
+  /usr/share/man/man1/css-beautify.1.gz css-beautify.1.gz /usr/share/man/man1/css-beautify-js.1.gz
+Priority: 10
+
+Name: html-beautify
+Link: /usr/bin/html-beautify
+Alternative: /usr/bin/html-beautify-js
+Dependents:
+  /usr/share/man/man1/html-beautify.1.gz html-beautify.1.gz /usr/share/man/man1/html-beautify-js.1.gz
+Priority: 10
