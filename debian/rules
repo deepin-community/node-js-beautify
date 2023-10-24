@@ -1,4 +1,16 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+export SHELL=/bin/bash
+export NODE_PATH=debian/node_modules
 
 %:
 	dh $@
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/node-js-beautify/usr/share/nodejs/js-beautify/js/bin/*
+	chmod +x debian/node-js-beautify/usr/share/nodejs/js-beautify/js/lib/cli.js
+	chmod +x debian/node-js-beautify/usr/share/nodejs/editorconfig/bin/editorconfig

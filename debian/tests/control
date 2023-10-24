@@ -1,0 +1,3 @@
+Depends: @
+Features: test-name=binaries-help
+Test-Command: js-beautify --help && css-beautify --help && html-beautify --help

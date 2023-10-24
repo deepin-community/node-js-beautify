@@ -1,0 +1,15 @@
+# false positives: data
+source-is-missing *js/src/javascript/acorn.js*
+source-is-missing *js/test/generated/beautify-html-tests.js*
+source-is-missing *index.html*
+source-is-missing *test/*
+source-contains-prebuilt-javascript-object *js/src/javascript/acorn.js*
+source-contains-prebuilt-javascript-object *js/test/generated/beautify-html-tests.js*
+source-contains-prebuilt-javascript-object *test/*
+very-long-line-length-in-source-file *.md*
+very-long-line-length-in-source-file *index.html*
+very-long-line-length-in-source-file *js/src/javascript/acorn.js*
+very-long-line-length-in-source-file *test/*
+
+# Generic types-* path
+add-component-copyright types-*

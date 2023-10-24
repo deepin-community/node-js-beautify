@@ -1,0 +1,10 @@
+set -e
+node js/test/node-beautify-tests.js
+CSS=/usr/bin/css-beautify
+HTML=/usr/bin/html-beautify
+if test "$AUTOPKGTEST_TMP" = ""; then
+	CSS=./js/bin/css-beautify.js
+	HTML=./js/bin/html-beautify.js
+fi
+$CSS debian/tests/pkg-js/style.css >/dev/null
+$HTML debian/tests/pkg-js/index.html >/dev/null

@@ -1,0 +1,6 @@
+build/
+dist/
+js/lib/beautif*
+web/
+python/jsbeautifier/unpackers
+*.1
